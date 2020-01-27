@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer; 
+    background:#131419;
+    outline: none;
+    box-shadow: -2px -2px 6px rgba(201, 201, 201, 0.1),
+                2px 2px 6px rgba(0,0,0,0.8);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    
+}
+
+.button:active{
+    box-shadow: inset -2px -2px 6px rgba(201, 201, 201, 0.1),
+                inset 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.dl{
+    width: 106px;
+}
+
+.ll{
+    height: 106px;
+}
+
+.textview{
+    width: 205px;
+    margin: 4px;
+    padding: 6px;
+    font-size: 25px;
+    padding: 5;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+    background:#131419;
+    box-shadow:  inset -2px -2px 6px rgba(201, 201, 201, 0.1),
+                 inset 2px 2px 6px rgba(0,0,0,0.8);
+
+}
+
+.main{
+    width: 245px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#131419;
+    border-radius: 15px;
+    box-shadow:  -5px -5px 10px rgba(201, 201, 201, 0.05),
+                  5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.bandt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg{
+    background:#131419;
+    height: 100vh;
+}
