@@ -1,2 +1,4 @@
 # asimplecalculator
-A simple calculator with dark neumorphism UI
+- A simple calculator with dark neumorphism UI
+
+https://github.com/JudahAragao/
