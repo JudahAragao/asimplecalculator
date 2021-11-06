@@ -19,14 +19,18 @@ function equal(){
     document.form.textview.value = null
     operations.forEach(element => {
         if (typeof(element) === "string") {
-            operator = element
-            if (operations.indexOf(element)) {
-                prefix = operations.slice(0,operations.indexOf(element)).join('')
-                suffix = operations.slice(operations.indexOf(element)+1).join('')
+            if (element in operators) {
+                operator = element
+                console.log(operator)
+
+                prefix = parseFloat(operations.slice(0,operations.indexOf(element)).join(''))
+                suffix = parseFloat(operations.slice(operations.indexOf(element)+1).join(''))
                 result = operators[operator](prefix,suffix)
                 document.form.textview.value = `${prefix}` + `${operator}` + `${suffix}` + '=' + `${result}`
             }
         }
+
+        
     });
 
 }
