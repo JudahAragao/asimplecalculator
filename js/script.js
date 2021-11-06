@@ -21,7 +21,6 @@ function equal(){
         if (typeof(element) === "string") {
             if (element in operators) {
                 operator = element
-                console.log(operator)
 
                 prefix = parseFloat(operations.slice(0,operations.indexOf(element)).join(''))
                 suffix = parseFloat(operations.slice(operations.indexOf(element)+1).join(''))
