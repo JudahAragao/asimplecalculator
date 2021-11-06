@@ -21,8 +21,8 @@ function equal(){
         if (typeof(element) === "string") {
             operator = element
             if (operations.indexOf(element)) {
-                prefix = operations.slice(0,operations.indexOf(element))
-                suffix = operations.slice(operations.indexOf(element)+1)
+                prefix = operations.slice(0,operations.indexOf(element)).join('')
+                suffix = operations.slice(operations.indexOf(element)+1).join('')
                 result = operators[operator](prefix,suffix)
                 document.form.textview.value = `${prefix}` + `${operator}` + `${suffix}` + '=' + `${result}`
             }
